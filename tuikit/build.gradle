@@ -28,17 +28,13 @@ android {
     repositories {
         flatDir {
             dirs 'libs'
+	    maven { url 'https://jitpack.io' }
         }
 
         google()
     }
 
 }
-allprojects {
-		repositories {
-			maven { url 'https://jitpack.io' }
-		}
-	}
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
