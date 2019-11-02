@@ -34,6 +34,12 @@ android {
     }
 
 }
+allprojects {
+		repositories {
+			...
+			maven { url 'https://jitpack.io' }
+		}
+	}
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
@@ -52,6 +58,7 @@ dependencies {
     implementation 'tv.danmaku.ijk.media:ijkplayer-arm64:0.8.8'
     implementation 'tv.danmaku.ijk.media:ijkplayer-x86:0.8.8'
     implementation 'tv.danmaku.ijk.media:ijkplayer-x86_64:0.8.8'
+    implementation 'com.github.hwq7909:ImTuikit:Tag'
 
 api 'com.tencent.imsdk:imsdk:4.5.111'
 // api project(':imsdk')
